@@ -25,7 +25,6 @@ body {
     letter-spacing: 0;
     color: #2b2b2b;
     overflow-x: hidden;
-    background-color: #fff !important;
 }
 
 /* CSS default set */
@@ -197,3 +196,6 @@ h6 {
     }
 }
 
+body.md-default-theme, body, html.md-default-theme, html {
+    background-color: #fff;
+}
