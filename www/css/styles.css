@@ -1,0 +1,199 @@
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeue.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../resources/fonts/HelveticaNeue.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../resources/fonts/HelveticaNeue.otf') format("opentype"), /* Safari, Android, iOS */
+    url('../fonts/HelveticaNeue.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../resources/fonts/HelveticaNeueBold.otf') format("opentype"), /* Safari, Android, iOS */
+    url('../resources/fonts/HelveticaNeueBold.woff') format("woff");
+    /* Pretty Modern Browsers */
+}
+
+body {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #2b2b2b;
+    overflow-x: hidden;
+    background-color: #fff !important;
+}
+
+/* CSS default set */
+
+body {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #2b2b2b;
+    overflow-x: hidden;
+}
+
+*,
+p,
+ul,
+li,
+span,
+address {
+    outline: none!important;
+    padding: 0;
+    margin: 0px;
+}
+
+.container-fluid-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+label {
+    font-weight: normal;
+    margin: 0px;
+}
+
+
+/********** HEADING STYLES *********************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.text-xlg {
+    font-size: 42px;
+    font-family: "HelveticaNeueBold", Helvetica, Arial, sans-serif;
+}
+.text-lg {
+    font-size: 16px;
+    line-height: 25px;
+}
+.text-md {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+.text-xs {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/****START: Vertical Rhythm CSS */
+
+.space-x-large {
+    height: 120px;
+    display: block;
+}
+
+.space-large {
+    height: 50px;
+    display: block;
+}
+
+.space-medium {
+    height: 30px;
+    display: block;
+}
+
+.space-small {
+    height: 15px;
+    display: block;
+}
+
+.space-x-small {
+    height: 10px;
+    display: block;
+}
+
+.space-xs-small {
+    height: 5px;
+    display: block;
+}
+
+
+/****END: Vertical Rhythn CSS */
+
+.font-normal {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+
+.font-bold {
+    font-family: "HelveticaNeueBold", Helvetica, Arial, sans-serif;
+}
+
+/********** CONTAINER *****************/
+
+.block-container {
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.themeblue {
+    background-color: darkblue;
+}
+.themewhite {
+    background-color: #fff !important;
+}
+.white {
+    color: #fff;
+}
+.blue {
+    color: darkblue;
+}
+.grey {
+    color: #a9a9a9;
+}
+/* Padding Zero */
+.p-0 {
+    padding: 0;
+}
+/* Margin Zero */
+.m-0 {
+    margin: 0;
+}
+
+.full-width {
+    width: 100%;
+}
+.nostyle {
+    text-transform: none;
+}
+.primary-button {
+    background-color: #21bcc1 !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+}
+.secondary-button {
+    background-color: #cbcbcb !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+}
+
+
+
+/* Tablet Resolution */
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
