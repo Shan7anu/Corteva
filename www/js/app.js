@@ -21,6 +21,13 @@ myCorteva.config(function ($stateProvider, $urlRouterProvider, $qProvider) {
             controller: 'registrationCtrl'
         })
 
+        /* OTP */
+        .state('otp', {
+            url: '/otp',
+            templateUrl: 'templates/generate-otp.html',
+            controller: 'otpCtrl'
+        })
+
     $urlRouterProvider.otherwise('registration'); //Default View
     $qProvider.errorOnUnhandledRejections(false);
 

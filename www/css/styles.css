@@ -98,32 +98,37 @@ h6 {
 
 /****START: Vertical Rhythm CSS */
 
-.space-x-large {
+.space-120 {
     height: 120px;
     display: block;
 }
 
-.space-large {
+.space-100 {
+    height: 100px;
+    display: block;
+}
+
+.space-50 {
     height: 50px;
     display: block;
 }
 
-.space-medium {
+.space-30 {
     height: 30px;
     display: block;
 }
 
-.space-small {
+.space-15 {
     height: 15px;
     display: block;
 }
 
-.space-x-small {
+.space-10 {
     height: 10px;
     display: block;
 }
 
-.space-xs-small {
+.space-5 {
     height: 5px;
     display: block;
 }
@@ -176,18 +181,44 @@ h6 {
 .nostyle {
     text-transform: none;
 }
-.primary-button {
+
+/* Primary Button */
+.btn-primary {
     background-color: #21bcc1 !important;
-    color: #fff !important;
+    border: 1px solid #21bcc1 ;
     border-radius: 8px !important;
+    color: #fff !important;
+    padding: 0 44px; 
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px; 
+    min-height: 40px;
+    white-space: normal;
+    width: 100%;
 }
-.secondary-button {
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited {
+    background-color: #21bcc1 !important;
+    border: 1px solid #21bcc1 !important;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Secondary Button */
+.btn-secondary {
     background-color: #cbcbcb !important;
-    color: #fff !important;
+    border: 1px solid #cbcbcb !important;
     border-radius: 8px !important;
+    color: #fff !important;
+    padding: 0 44px; 
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px; 
+    min-height: 40px;
+    white-space: normal;
+    width: 100%;
 }
-
-
 
 /* Tablet Resolution */
 @media (min-width: 768px) {
@@ -198,4 +229,39 @@ h6 {
 
 body.md-default-theme, body, html.md-default-theme, html {
     background-color: #fff;
+}
+
+/* Placing elements at bottom of page */
+.placed-bottom-30 {
+    bottom: 30px;
+    position: absolute;
+}
+
+.placed-bottom-0 {
+    bottom: 0px;
+    position: absolute;
+}
+
+.shadow {
+    box-shadow: 0 5px 15px #a9a9a9;
+}
+
+/* Font Size 14 */
+.text-14 {
+    font-size: 14px;
+}
+/* OTP Styling */
+input[type=number] {
+    height: 45px;
+    width: 45px;
+    font-size: 25px;
+    text-align: center;
+    border-width: inherit;
+box-sizing: border-box;
+border-bottom: 2px solid #a9a9a9;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

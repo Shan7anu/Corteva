@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <section class="container block-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <span class="space-100"></span>
+                <!-- Placeholder IMage -->
+                <img src="resources/img/otp-banner.png" class="center-block" style="width: auto;
+                height: 175px !important;"
+                    alt="OTP Image">
+                <span class="space-15"></span>
+                <strong class="grey">{{otp.heading}}</strong>
+                <span class="space-30"></span>
+                <p class="text-14">{{otp.label}} {{otp.mobileNumber}}</p>
+                <form>
+                    <!-- OTP Field Start-->
+                    <input id="codeBox1" type="number" placeholder="●" maxlength="1" onkeyup="onKeyUpEvent(1, event)"/>
+                    <input id="codeBox2" type="number" placeholder="●" maxlength="1" onkeyup="onKeyUpEvent(2, event)"/>
+                    <input id="codeBox3" type="number" placeholder="●" maxlength="1" onkeyup="onKeyUpEvent(3, event)"/>
+                    <input id="codeBox4" type="number" placeholder="●" maxlength="1" onkeyup="onKeyUpEvent(4, event)"/>
+                    <!-- OTP Field End -->
+                </form>
+
+                <span class="space-30"></span>
+                <div primary-button ng-click="continue()" aria-label="Continue" type="Continue"></div>
+                <span class="space-30"></span>
+                <a href="">{{otp.resendOTP}}</a>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
