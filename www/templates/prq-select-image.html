@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div ng-include="'templates/components/app-header.html'"></div>
+    <section class="container block-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <span class="space-30"></span>
+                <strong>{{selectImageLabel}}</strong>
+                <span class="space-30"></span>
+                <div primary-button ng-click="selectImage()" aria-label="Select" type="Select"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <!-- Show/Hide Functionality upon Image Selection -->
+            </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 placed-bottom-0 p-0 m-0">
+                <div primary-button-rect ng-click="goToSeedingDate()" aria-label="Skip & Continue" type="Skip & Continue"></div>
+                <!-- If Image Selected, Change the Button label to 'Next' -->
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

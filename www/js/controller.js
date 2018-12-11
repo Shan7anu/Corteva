@@ -14,13 +14,23 @@ myCorteva.controller('sidenavCtrl', ['$scope', '$mdSidenav', function ($scope, $
 }]);
 
 
-/* Registration Controller */
-myCorteva.controller('registrationCtrl', ['$rootScope', '$location', '$scope', '$location', function ($rootScope, $location, $scope, $location) {
-    console.log("Inside registrationCtrl");
+/* Header Controller */
+myCorteva.controller('headerCtrl', ['$rootScope', '$location', '$scope', '$location', function ($rootScope, $location, $scope, $location) {
+    console.log("Inside headerCtrl");
+    $scope.close = function () {
+        console.log('close pressed');
+    }
+    $scope.backButton = function () {
+        console.log('backButton pressed');
+        history.back();
+    }
+}]);
 
+/* Registration Controller */
+myCorteva.controller('registrationCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside registrationCtrl");
     $scope.registration = registration;
     $scope.professionType = professionType;
-
 
     $scope.sendOTP = function () {
         console.log("sendOTP")
@@ -28,11 +38,12 @@ myCorteva.controller('registrationCtrl', ['$rootScope', '$location', '$scope', '
     }
     $scope.signup = function () {
         console.log("signup")
+        $location.path('/otp');
     }
 
 }]);
 /* OTP Controller */
-myCorteva.controller('otpCtrl', ['$rootScope', '$location', '$scope', '$location', function ($rootScope, $location, $scope, $location) {
+myCorteva.controller('otpCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside otpCtrl");
     $scope.otp = otp;
 
@@ -64,6 +75,72 @@ myCorteva.controller('otpCtrl', ['$rootScope', '$location', '$scope', '$location
           }
         }
       }
+      /* Navigation on Continue */
+      $scope.continue = function () {
+        console.log("Continue Clicked")
+        $location.path('/prqCropType');
+    }
 
 }]);
+
+/* Post Registration Questionaire: Crop Type Controller*/
+myCorteva.controller('prqCropTypeCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside prqCropTypeCtrl");
+    $scope.postReg = postReg;
+    $scope.cropTypeOptions = cropTypeOptions;
+
+    /* Navigation on Next */
+    $scope.goToIsCropInfected = function () {
+        console.log("Next Clicked")
+        $location.path('/prqCropInfected');
+    }
+
+}]);
+/* Post Registration Questionaire: IsCropInfected Controller*/
+myCorteva.controller('prqCropInfectedCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside prqCropInfectedCtrl");
+    $scope.isCropInfected = postReg.isCropInfected;
+
+    /* Navigation on Next */
+    $scope.goToAcreage = function () {
+        console.log("Next Clicked")
+        $location.path('/prqAcreage');
+    }
+
+}]);
+/* Post Registration Questionaire: Acreage Controller*/
+myCorteva.controller('prqAcreageCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside prqAcreageCtrl");
+
+    $scope.acreageLabel = postReg.acreage;
+    $scope.acreage = acreage;
+
+    /* Navigation on Next */
+    $scope.goToSelectImage = function () {
+        console.log("Next Clicked")
+        $location.path('/prqSelectImage');
+    }
+
+}]);
+/* Post Registration Questionaire: Acreage Controller*/
+myCorteva.controller('prqSelectImageCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside prqSelectImageCtrl");
+
+    $scope.selectImageLabel = postReg.selectImage;
+
+    /* Function on Select Button */
+    $scope.selectImage = function () {
+        console.log("Select Clicked")
+        /* Write gallery/camera access functionality */
+    }
+
+    /* Navigation on Skip & Continue */
+    $scope.goToSeedingDate = function () {
+        console.log("Skip & Continue Clicked")
+        /* $location.path('/prqSeedingDate'); */
+    }
+
+}]);
+
+
 

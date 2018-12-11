@@ -17,3 +17,16 @@ otp = {
     mobileNumber: "+91-9998088880",
     resendOTP: "Resend OTP Code"
 }
+/* Post Registration Questionire */
+postReg = {
+    thanksNote: "Thank you for watching the video and registering.",
+    helpUnderstand: "Please help us understand your crop issue better by answering few simple questions.",
+    qCropType: "May we know which crop you sowed?",
+    isCropInfected: "Is your Crop infected by BPH?",
+    acreage: "Acreage",
+    selectImage: "Select an image of your Crop (Optional) "
+}
+
+cropTypeOptions = ["Rice","Fruit","Others"];
+
+acreage = ["<1H","1-2H","2-5H",">5H"];

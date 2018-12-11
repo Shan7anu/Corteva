@@ -198,13 +198,16 @@ h6 {
 }
 .btn-primary:active,
 .btn-primary:focus,
-.btn-primary:visited {
+.btn-primary:visited,
+.btn-primary-rect:active,
+.btn-primary-rect:focus,
+.btn-primary-rect:visited
+{
     background-color: #21bcc1 !important;
     border: 1px solid #21bcc1 !important;
     color: #fff;
     font-size: 16px;
 }
-
 /* Secondary Button */
 .btn-secondary {
     background-color: #cbcbcb !important;
@@ -218,6 +221,20 @@ h6 {
     min-height: 40px;
     white-space: normal;
     width: 100%;
+}
+/* Primary Button Rectangle*/
+.btn-primary-rect {
+    background-color: #21bcc1 !important;
+    border: 1px solid #21bcc1 ;
+    border-radius: 0px !important;
+    color: #fff !important;
+    padding: 0 44px; 
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px; 
+    min-height: 40px;
+    white-space: normal;
+    width: 105%;
 }
 
 /* Tablet Resolution */
@@ -233,14 +250,24 @@ body.md-default-theme, body, html.md-default-theme, html {
 
 /* Placing elements at bottom of page */
 .placed-bottom-30 {
+    overflow: hidden;
+    position: fixed;
     bottom: 30px;
-    position: absolute;
+    width: 100%;
+    right: 0;
+    z-index: 9999;
 }
 
 .placed-bottom-0 {
-    bottom: 0px;
-    position: absolute;
+    overflow: hidden;
+    position: fixed;
+    bottom: -1px;
+    width: 100%;
+    right: 0;
+    z-index: 9999;
 }
+
+
 
 .shadow {
     box-shadow: 0 5px 15px #a9a9a9;
@@ -265,3 +292,26 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+
+/* App Header */
+.page-header {
+    position: relative;
+    margin: 0;
+    display: block;
+    border: none;
+}
+
+.header-title {
+    color: #2B2B2B;
+    font-weight: bold;
+    text-align: center;
+}
+.header-back-button {
+    content: url("../resources/img/arrow-back.svg");
+}
+
+.header-close-button {
+    content: url("../resources/img/close.svg");
+}
+

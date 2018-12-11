@@ -10,6 +10,19 @@ myCorteva.directive('primaryButton', function () {
         },
     };
 });
+/*PrimaryButtonRectangle Directive*/
+myCorteva.directive('primaryButtonRect', function () {
+    return {
+        scope: true,
+        restrict: 'A',
+        templateUrl: "templates/components/primary-button-rect.html",
+        link: function (scope, element, attrs) {
+            scope.btnTextRect = attrs.type;
+            scope.arialabel = attrs.arialabel;
+        },
+    };
+});
+
 /*SecondaryButton Directive*/
 myCorteva.directive('secondaryButton', function () {
     return {

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div ng-include="'templates/components/app-header.html'"></div>
+    <section class="container block-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <span class="space-30"></span>
+                <p class="grey text-14">{{postReg.thanksNote}}</p>
+                <span class="space-15"></span>
+                <p class="grey text-14">{{postReg.helpUnderstand}}</p>
+                <span class="space-30"></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <span class="space-15"></span>
+                <strong>{{postReg.qCropType}}</strong>
+            </div>
+        </div>
+        <md-content class="themewhite">
+            <div layout="row">
+                <md-input-container class="md-block" flex="100">
+                    <md-select ng-model="crop.type">
+                        <md-option ng-repeat="ct in cropTypeOptions" value="{{ct}}">
+                        {{ct}}
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+            </div>
+        </md-content>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 placed-bottom-0 p-0 m-0">
+                <div primary-button-rect ng-click="goToIsCropInfected()" aria-label="Next" type="Next"></div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

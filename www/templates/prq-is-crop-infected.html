@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div ng-include="'templates/components/app-header.html'"></div>
+    <section class="container block-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <span class="space-30"></span>
+                <strong>{{isCropInfected}}</strong>
+                <span class="space-15"></span>
+                <md-content layout-padding="" class="themewhite container block-container p-0">
+                    <div class="p-0">
+                        <span class="space-10"></span>
+                        <md-radio-group class="col-xs-12 col-sm-12 col-md-12 p-0">
+                            <md-radio-button value="Yes" class="col-xs-4 col-sm-4 col-md-3 md-primary grey">
+                                Yes
+                            </md-radio-button>
+                            <md-radio-button value="No" class="col-xs-4 col-sm-4 col-md-3 md-primary grey">
+                                No
+                            </md-radio-button>
+                        </md-radio-group>
+                    </div>
+                </md-content>
+            </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 placed-bottom-0 p-0 m-0">
+                <div primary-button-rect ng-click="goToAcreage()" aria-label="Next" type="Next"></div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>
