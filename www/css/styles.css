@@ -315,3 +315,15 @@ input[type=number]::-webkit-outer-spin-button {
     content: url("../resources/img/close.svg");
 }
 
+.crop-placeholder-image {
+    content: url("../resources/img/placeholder-image.svg");
+    float: none;
+    box-shadow: 0 0 20px #a9a9a9;
+    height: 150px;
+    width: 150px;
+}
+
+
+.text-green, .success {
+    color: #4da133;
+}

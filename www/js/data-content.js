@@ -24,7 +24,8 @@ postReg = {
     qCropType: "May we know which crop you sowed?",
     isCropInfected: "Is your Crop infected by BPH?",
     acreage: "Acreage",
-    selectImage: "Select an image of your Crop (Optional) "
+    selectImage: "Select an image of your Crop (Optional)",
+    imageSuccess: "Added image succesfully"
 }
 
 cropTypeOptions = ["Rice","Fruit","Others"];

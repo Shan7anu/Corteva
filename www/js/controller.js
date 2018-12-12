@@ -127,11 +127,12 @@ myCorteva.controller('prqSelectImageCtrl', ['$rootScope', '$scope', '$location',
     console.log("Inside prqSelectImageCtrl");
 
     $scope.selectImageLabel = postReg.selectImage;
-
+    $scope.imageSuccess = postReg.imageSuccess;
     /* Function on Select Button */
     $scope.selectImage = function () {
         console.log("Select Clicked")
         /* Write gallery/camera access functionality */
+        $scope.imageAdded = true;
     }
 
     /* Navigation on Skip & Continue */
