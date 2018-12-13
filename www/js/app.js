@@ -49,7 +49,25 @@ myCorteva.config(function ($stateProvider, $urlRouterProvider, $qProvider) {
             templateUrl: 'templates/prq-select-image.html',
             controller: 'prqSelectImageCtrl'
         })
+        /* Post Registration Questionaire: Select Seeding Date */
+        .state('prqSelectDate', {
+            url: '/prqSelectDate',
+            templateUrl: 'templates/prq-select-date.html',
+            controller: 'prqSelectDateCtrl'
+        })
+        /* Retailer Questionaire: Retailer Connect */
+        .state('retailerConnect', {
+            url: '/retailerConnect',
+            templateUrl: 'templates/retailer-connect.html',
+            controller: 'retailerConnectCtrl'
+        })
 
+        /* Retailer Questionaire: Retailer Estimate */
+        .state('retailerEstimate', {
+            url: '/retailerEstimate',
+            templateUrl: 'templates/retailer-estimate.html',
+            controller: 'retailerEstimateCtrl'
+        })
     $urlRouterProvider.otherwise('registration'); //Default View
     $qProvider.errorOnUnhandledRejections(false);
 

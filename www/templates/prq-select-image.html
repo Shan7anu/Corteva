@@ -24,8 +24,9 @@
     <section>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 placed-bottom-0 p-0 m-0">
-                <div primary-button-rect ng-click="goToSeedingDate()" aria-label="Skip & Continue" type="Skip & Continue"></div>
+                <div ng-if="!imageAdded" primary-button-rect ng-click="goToSeedingDate()" aria-label="Skip & Continue" type="Skip & Continue"></div>
                 <!-- If Image Selected, Change the Button label to 'Next' -->
+                <div ng-if="imageAdded" primary-button-rect ng-click="goToSeedingDate()" aria-label="Next" type="Next"></div>
             </div>
         </div>
     </section>

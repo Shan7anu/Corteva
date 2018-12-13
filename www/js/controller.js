@@ -33,11 +33,11 @@ myCorteva.controller('registrationCtrl', ['$rootScope', '$scope', '$location', f
     $scope.professionType = professionType;
 
     $scope.sendOTP = function () {
-        console.log("sendOTP")
+        console.log("sendOTP");
         $location.path('/otp');
     }
     $scope.signup = function () {
-        console.log("signup")
+        console.log("signup");
         $location.path('/otp');
     }
 
@@ -77,7 +77,7 @@ myCorteva.controller('otpCtrl', ['$rootScope', '$scope', '$location', function (
       }
       /* Navigation on Continue */
       $scope.continue = function () {
-        console.log("Continue Clicked")
+        console.log("Continue Clicked");
         $location.path('/prqCropType');
     }
 
@@ -91,7 +91,7 @@ myCorteva.controller('prqCropTypeCtrl', ['$rootScope', '$scope', '$location', fu
 
     /* Navigation on Next */
     $scope.goToIsCropInfected = function () {
-        console.log("Next Clicked")
+        console.log("Next Clicked");
         $location.path('/prqCropInfected');
     }
 
@@ -103,7 +103,7 @@ myCorteva.controller('prqCropInfectedCtrl', ['$rootScope', '$scope', '$location'
 
     /* Navigation on Next */
     $scope.goToAcreage = function () {
-        console.log("Next Clicked")
+        console.log("Next Clicked");
         $location.path('/prqAcreage');
     }
 
@@ -117,31 +117,56 @@ myCorteva.controller('prqAcreageCtrl', ['$rootScope', '$scope', '$location', fun
 
     /* Navigation on Next */
     $scope.goToSelectImage = function () {
-        console.log("Next Clicked")
+        console.log("Next Clicked");
         $location.path('/prqSelectImage');
     }
 
 }]);
-/* Post Registration Questionaire: Acreage Controller*/
+/* Post Registration Questionaire: Select Image Controller*/
 myCorteva.controller('prqSelectImageCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside prqSelectImageCtrl");
-
     $scope.selectImageLabel = postReg.selectImage;
     $scope.imageSuccess = postReg.imageSuccess;
     /* Function on Select Button */
     $scope.selectImage = function () {
-        console.log("Select Clicked")
+        console.log("Select Clicked");
         /* Write gallery/camera access functionality */
         $scope.imageAdded = true;
     }
-
     /* Navigation on Skip & Continue */
     $scope.goToSeedingDate = function () {
-        console.log("Skip & Continue Clicked")
-        /* $location.path('/prqSeedingDate'); */
+        console.log("Skip & Continue Clicked");
+        $location.path('/prqSelectDate');
     }
-
+}]);
+/* Post Registration Questionaire: Select Seeding Date Controller*/
+myCorteva.controller('prqSelectDateCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside prqSelectDateCtrl");
+    $scope.selectDateLabel = postReg.selectDate;
+    /* Navigation on Skip & Continue */
+    $scope.submit = function () {
+        console.log("Submit Clicked");
+        $location.path('/retailerConnect');
+    }
 }]);
 
 
 
+/* Retailer Questionaire: Retailer Connect Controller*/
+myCorteva.controller('retailerConnectCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside retailerConnectCtrl");
+    $scope.retailerQues = retailerQues;
+    $scope.weeks = weeks;
+    /* Navigation on Next */
+    $scope.goToRetailerEstimate = function () {
+        console.log("Next Clicked");
+        $location.path('/retailerEstimate');
+    }
+}]);
+/* Retailer Questionaire: Retailer Estimate Controller*/
+myCorteva.controller('retailerEstimateCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside retailerEstimateCtrl");
+    $scope.retailerQues = retailerQues;
+    $scope.liquidationRange = liquidationRange;
+
+}]);

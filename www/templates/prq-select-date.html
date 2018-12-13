@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div ng-include="'templates/components/app-header.html'"></div>
+    <section class="container block-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <span class="space-30"></span>
+                <strong>{{selectDateLabel}}</strong>
+                <span class="space-30"></span>
+                <input type="date" class="full-width" placeholder="Select Date">
+                <!-- Need to Customize Calendar -->
+            </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 placed-bottom-0 p-0 m-0">
+                <div submit-button-rect ng-click="submit()" aria-label="Submit" type="Submit"></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
