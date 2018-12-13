@@ -25,44 +25,44 @@ myCorteva.config(function ($stateProvider, $urlRouterProvider, $qProvider) {
             templateUrl: 'templates/generate-otp.html',
             controller: 'otpCtrl'
         })
-        /* Post Registration Questionaire: Crop Type */
+        /* Post Registration Questionnaire: Crop Type */
         .state('prqCropType', {
             url: '/prqCropType',
             templateUrl: 'templates/prq-crop-type.html',
             controller: 'prqCropTypeCtrl'
         })
-        /* Post Registration Questionaire: IsCropInfectedByBPH */
+        /* Post Registration Questionnaire: IsCropInfectedByBPH */
         .state('prqCropInfected', {
             url: '/prqCropInfected',
             templateUrl: 'templates/prq-is-crop-infected.html',
             controller: 'prqCropInfectedCtrl'
         })
-        /* Post Registration Questionaire: Acreage */
+        /* Post Registration Questionnaire: Acreage */
         .state('prqAcreage', {
             url: '/prqAcreage',
             templateUrl: 'templates/prq-acreage.html',
             controller: 'prqAcreageCtrl'
         })
-        /* Post Registration Questionaire: Select Crop Image */
+        /* Post Registration Questionnaire: Select Crop Image */
         .state('prqSelectImage', {
             url: '/prqSelectImage',
             templateUrl: 'templates/prq-select-image.html',
             controller: 'prqSelectImageCtrl'
         })
-        /* Post Registration Questionaire: Select Seeding Date */
+        /* Post Registration Questionnaire: Select Seeding Date */
         .state('prqSelectDate', {
             url: '/prqSelectDate',
             templateUrl: 'templates/prq-select-date.html',
             controller: 'prqSelectDateCtrl'
         })
-        /* Retailer Questionaire: Retailer Connect */
+        /* Retailer Questionnaire: Retailer Connect */
         .state('retailerConnect', {
             url: '/retailerConnect',
             templateUrl: 'templates/retailer-connect.html',
             controller: 'retailerConnectCtrl'
         })
 
-        /* Retailer Questionaire: Retailer Estimate */
+        /* Retailer Questionnaire: Retailer Estimate */
         .state('retailerEstimate', {
             url: '/retailerEstimate',
             templateUrl: 'templates/retailer-estimate.html',
