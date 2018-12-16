@@ -1,9 +1,6 @@
-# CORTEVA agriscience
+# CORTEVA
 
-Corteva is a mobile application based on [AEMM Platform](https://helpx.adobe.com/in/digital-publishing-solution/help/overview-dps.html) for [CORTEVA agriscience](https://www.corteva.com/)
-
-This repo consist of only UI Development (HTML/CSS/JS) which later on can/will be converted to AEM Components.
-
+This repo consist of only UI Development (HTML/CSS/JS).
 
 ## Getting Started
 Clone the repository and Happy Coding!
