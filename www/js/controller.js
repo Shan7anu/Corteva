@@ -34,7 +34,8 @@ myCorteva.controller('registrationCtrl', ['$rootScope', '$scope', '$location', f
 
     $scope.uploadDP = function () {
         console.log("uploadDP");
-        /* Upload Picture Logic */
+        /* Upload Picture Logic and remove below navigation */
+        $location.path('/profile');
     }
     $scope.sendOTP = function () {
         console.log("sendOTP");
@@ -174,3 +175,15 @@ myCorteva.controller('retailerEstimateCtrl', ['$rootScope', '$scope', '$location
     $scope.liquidationRange = liquidationRange;
 
 }]);
+/* Profile Controller*/
+myCorteva.controller('profileCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
+    console.log("Inside profileCtrl");
+    $scope.pagetitle = "Profile";
+    $scope.profile = profile;
+    $scope.userData = userData;
+    $scope.navigateTo = function () {
+        alert("Yet to be developed!")
+    }
+}]);
+
+

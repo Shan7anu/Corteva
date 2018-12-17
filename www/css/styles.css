@@ -151,10 +151,10 @@ h6 {
     padding-right: 27px;
 }
 
-.themeblue {
+.bg-blue {
     background-color: darkblue;
 }
-.themewhite {
+.bg-white {
     background-color: #fff !important;
 }
 .white {
@@ -166,9 +166,13 @@ h6 {
 .grey {
     color: #a9a9a9;
 }
-.themered {
+.bg-red {
     background-color:#ec0026;
 }
+.bg-black {
+    background-color: #000000;
+}
+
 /* Padding Zero */
 .p-0 {
     padding: 0;
@@ -180,6 +184,12 @@ h6 {
 /* Margin 0 auto */
 .m-0-auto {
     margin: 0 auto;
+}
+.m-left-10 {
+    margin-left: 10px !important;
+}
+.m-left--15 {
+    margin-left: -15px !important;
 }
 .full-width {
     width: 100%;
@@ -299,6 +309,11 @@ body.md-default-theme, body, html.md-default-theme, html {
 .text-14 {
     font-size: 14px;
 }
+/* Font Size 10 */
+.text-10 {
+    font-size: 10px;
+}
+
 /* OTP Styling */
 input[type=number] {
     height: 45px;
@@ -325,8 +340,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header-title {
-    color: #2B2B2B;
-    font-weight: bold;
+    color: #fff;
     text-align: center;
 }
 .header-back-button {
@@ -374,6 +388,11 @@ input[type=number]::-webkit-outer-spin-button {
         top:-1px !important; 
         left:160px !important;
     }
+    .profile-edit {
+        position:absolute !important; 
+        top:-1px !important; 
+        left:63px !important;
+    }
   }
   /* Devices ranging between 321px - 360px width */
 @media only screen and (max-width: 360px) and (min-width: 321px) {
@@ -381,6 +400,11 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute !important;
     top: -5px !important;
     left: 175px !important;
+    }
+    .profile-edit {
+        position: absolute !important;
+        top: 0px !important;
+        left: 72px !important;
     }
   }
   
@@ -391,6 +415,11 @@ input[type=number]::-webkit-outer-spin-button {
         top: 0 !important;
         left: 190px !important;
         }
+        .profile-edit {
+        position: relative !important;
+        top: -110px !important;
+        left: 30px !important;
+        }
    }
    @media only screen and (min-width: 425px) {
     .imageontop-image2 {
@@ -398,4 +427,19 @@ input[type=number]::-webkit-outer-spin-button {
         top:0 !important; 
         left:215px !important;
     }
+    .profile-edit {
+        position: relative !important;
+        top: -115px !important;
+        left: 32px !important
+        }
   }
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 0;  
+}
+.td-bold{
+    font-weight:bold
+}
+

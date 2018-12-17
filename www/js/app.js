@@ -61,12 +61,17 @@ myCorteva.config(function ($stateProvider, $urlRouterProvider, $qProvider) {
             templateUrl: 'templates/retailer-connect.html',
             controller: 'retailerConnectCtrl'
         })
-
         /* Retailer Questionnaire: Retailer Estimate */
         .state('retailerEstimate', {
             url: '/retailerEstimate',
             templateUrl: 'templates/retailer-estimate.html',
             controller: 'retailerEstimateCtrl'
+        })
+        /* Profile */
+        .state('profile', {
+            url: '/profile',
+            templateUrl: 'templates/profile.html',
+            controller: 'profileCtrl'
         })
     $urlRouterProvider.otherwise('registration'); //Default View
     $qProvider.errorOnUnhandledRejections(false);
