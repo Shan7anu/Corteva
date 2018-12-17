@@ -32,6 +32,10 @@ myCorteva.controller('registrationCtrl', ['$rootScope', '$scope', '$location', f
     $scope.registration = registration;
     $scope.professionType = professionType;
 
+    $scope.uploadDP = function () {
+        console.log("uploadDP");
+        /* Upload Picture Logic */
+    }
     $scope.sendOTP = function () {
         console.log("sendOTP");
         $location.path('/otp');

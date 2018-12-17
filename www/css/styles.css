@@ -177,7 +177,10 @@ h6 {
 .m-0 {
     margin: 0;
 }
-
+/* Margin 0 auto */
+.m-0-auto {
+    margin: 0 auto;
+}
 .full-width {
     width: 100%;
 }
@@ -353,3 +356,46 @@ input[type=number]::-webkit-outer-spin-button {
 .margin-top-50 {
     margin-top: -50px;
 }
+.imageontop-parent {
+    position:relative;
+    top:0; 
+    left:0;
+}
+.imageontop-image1 {
+    position:relative;
+    top:0; 
+    left:0;
+}
+
+/* Devices ranging upto 320px width */
+@media only screen and (max-width: 320px) {
+    .imageontop-image2 {
+        position:absolute !important; 
+        top:-1px !important; 
+        left:160px !important;
+    }
+  }
+  /* Devices ranging between 321px - 360px width */
+@media only screen and (max-width: 360px) and (min-width: 321px) {
+    .imageontop-image2 {
+    position: absolute !important;
+    top: -5px !important;
+    left: 175px !important;
+    }
+  }
+  
+  /* Devices ranging between 361px - 375px width */ 
+  @media only screen and (min-width: 375px) {
+    .imageontop-image2 {
+        position: absolute !important;
+        top: 0 !important;
+        left: 190px !important;
+        }
+   }
+   @media only screen and (min-width: 425px) {
+    .imageontop-image2 {
+        position:absolute !important; 
+        top:0 !important; 
+        left:215px !important;
+    }
+  }
