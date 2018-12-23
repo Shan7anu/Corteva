@@ -250,7 +250,7 @@ h6 {
     height: 40px; 
     min-height: 40px;
     white-space: normal;
-    width: 105%;
+    width: 100%;
 }
 /* Submit Button Rectangle*/
 .btn-submit-rect {
@@ -264,17 +264,9 @@ h6 {
     height: 40px; 
     min-height: 40px;
     white-space: normal;
-    width: 105%;
+    width: 100%;
 }
 
-
-
-/* Tablet Resolution */
-@media (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
 
 body.md-default-theme, body, html.md-default-theme, html {
     background-color: #fff;
@@ -405,8 +397,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .profile-edit {
         position: absolute !important;
-        top: 0px !important;
-        left: 72px !important;
+        top: -10px !important;
+        left: 70px !important;
     }
 }
   
@@ -420,7 +412,8 @@ input[type=number]::-webkit-outer-spin-button {
     .profile-edit {
     position: relative !important;
     top: -110px !important;
-    left: 30px !important;
+    /* left: 30px !important; */
+    left: 50px !important;
     }
 }
 /* Devices with min-width 375CSSpx like Nexus 6/6P, iPhone 6/7/8 Plus */
@@ -438,11 +431,67 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .profile-edit {
     position: relative !important;
-    top: -115px !important;
-    left: 32px !important
+    top: -125px !important;
+    left: 50px !important
+    }
+    
+}
+/* ----------- iPad Media Queries ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    .container {
+        width: 100%;
+    }
+    .btn-primary {
+        width: 75% !important;
+    }
+    .btn-secondary {
+        width: 75% !important;
+    }
+    .imageontop-image2 {
+        position: absolute !important;
+        top: -20px !important;
+        left: 365px !important;
+    }
+    .profile-edit {
+        position: relative !important;
+        top: -160px !important;
+        left: 65px !important;
+    }
+    table {
+        height: 150px;
+    }
+
+}
+/* ----------- iPad Pro Media Queries ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .container {
+        width: 100% !important;
+    }
+    .btn-primary {
+        width: 75% !important;
+    }
+    .btn-secondary {
+        width: 75% !important;
+    }
+    .imageontop-image2 {
+        position: absolute !important;
+        top: -20px !important;
+        left: 495px !important;
+    }
+    table {
+        height: 150px;
     }
 }
 
+md-content {
+    display: inline !important;
+}
 table {
     width: 100%;
     border-collapse: separate;
