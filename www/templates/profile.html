@@ -9,18 +9,18 @@
                 <span class="space-10"></span>
                 <div class="col-xs-4 col-sm-4 col-md-4 p-0">
                     <div class="imageontop-parent">
-                        <img src="resources/img/official/profile.png" class="img-responsive m-0-auto imageontop-image1"
+                        <img src="resources/img/official/p2.png" class="img-responsive m-0-auto imageontop-image1"
                             alt="profile picture">
-                        <img src="resources/img/official/camera.png" class="img-responsive m-0-auto profile-edit"
+                        <img src="resources/img/official/profileedit.png" class="img-responsive m-0-auto profile-edit" style="width:50px;"
                             alt="upload profile picture" ng-click="uploadDP()">
                     </div>
                 </div>
-                <div class="col-xs-8 col-sm-8 col-md-8">
+                <div class="col-xs-8 col-sm-8 col-md-8" style="padding-left: 25px;">
                         <span class="space-10"></span>
                     <table>
                         <tr ng-repeat="data in userData">
-                            <td class="td-bold text-left text-10 grey">{{data.key}}</td>
-                            <td class="text-left text-10">{{data.value}}</td>
+                            <td class="text-left text-10 grey"><strong>{{data.key}}</strong></td>
+                            <td class="text-left text-10" style="padding-left: 10px;">{{data.value}}</td>
                         </tr>
                     </table>
                 </div>

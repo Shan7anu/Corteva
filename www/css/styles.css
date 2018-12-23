@@ -344,11 +344,13 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
 }
 .header-back-button {
-    content: url("../resources/img/arrow-back.svg");
+    content: url("../resources/img/official//back.png");
+    float: left !important;
 }
 
 .header-close-button {
-    content: url("../resources/img/close.svg");
+    content: url("../resources/img/official/close.png");
+    float: right !important;
 }
 
 .crop-placeholder-image {
@@ -384,62 +386,66 @@ input[type=number]::-webkit-outer-spin-button {
 /* Devices ranging upto 320px width */
 @media only screen and (max-width: 320px) {
     .imageontop-image2 {
-        position:absolute !important; 
-        top:-1px !important; 
-        left:160px !important;
+        position: absolute !important; 
+        top: -20px !important;
+        left: 140px !important;
     }
     .profile-edit {
-        position:absolute !important; 
-        top:-1px !important; 
-        left:63px !important;
+        position: absolute !important;
+        top: -10px !important;
+        left: 60px !important;
     }
-  }
-  /* Devices ranging between 321px - 360px width */
+}
+  /* Devices ranging between 321px - 360px width like Galaxy Note 2/3, Blackberry Z30*/
 @media only screen and (max-width: 360px) and (min-width: 321px) {
     .imageontop-image2 {
-    position: absolute !important;
-    top: -5px !important;
-    left: 175px !important;
+        position: absolute !important;
+        top: -20px !important;
+        left: 160px !important;
     }
     .profile-edit {
         position: absolute !important;
         top: 0px !important;
         left: 72px !important;
     }
-  }
+}
   
-  /* Devices ranging between 361px - 375px width */ 
-  @media only screen and (min-width: 375px) {
-    .imageontop-image2 {
-        position: absolute !important;
-        top: 0 !important;
-        left: 190px !important;
-        }
-        .profile-edit {
-        position: relative !important;
-        top: -110px !important;
-        left: 30px !important;
-        }
-   }
-   @media only screen and (min-width: 425px) {
-    .imageontop-image2 {
-        position:absolute !important; 
-        top:0 !important; 
-        left:215px !important;
+/* Devices with min-width 375CSSpx like iPhone X */
+@media only screen and (min-width: 375px) { 
+.imageontop-image2 {
+    position: absolute !important;
+    top: -20px !important;
+    left: 168px !important;
     }
     .profile-edit {
-        position: relative !important;
-        top: -115px !important;
-        left: 32px !important
-        }
-  }
+    position: relative !important;
+    top: -110px !important;
+    left: 30px !important;
+    }
+}
+/* Devices with min-width 375CSSpx like Nexus 6/6P, iPhone 6/7/8 Plus */
+@media only screen and (min-width: 412px){
+.imageontop-image2 {
+    position: absolute !important;
+    top: -20px !important;
+    left: 188px !important;
+}
+@media only screen and (min-width: 425px) {
+.imageontop-image2 {
+    position: absolute !important;
+    top: -20px !important;
+    left: 192px !important;
+}
+.profile-edit {
+    position: relative !important;
+    top: -115px !important;
+    left: 32px !important
+    }
+}
 
 table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 10px 0;  
-}
-.td-bold{
-    font-weight:bold
 }
 
