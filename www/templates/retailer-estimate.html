@@ -13,7 +13,7 @@
                         <!-- <form name="userForm"> -->
                         <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block" flex-gt-md="">
                             <span class="space-15"></span>
-                            <p class="text-red">Min</p>
+                            <p class="text-red">{{retailerQues.min}}</p>
                             <span class="space-15"></span>
                             <input type="tel" ng-model="margin.min" placeholder="10" class="col-xs-4 col-sm-4 col-md-4">
                         </md-input-container>
@@ -22,13 +22,13 @@
                     <div class="p-0 col-xs-4 col-sm-4 col-md-4">
                         <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block" flex-gt-md="">
                             <span class="space-15"></span>
-                            <p class="text-red">Max</p>
+                            <p class="text-red">{{retailerQues.max}}</p>
                             <span class="space-15"></span>
                             <input type="tel" ng-model="margin.max" placeholder="1500" class="col-xs-4 col-sm-4 col-md-4">
                         </md-input-container>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center margin-top-50">
-                        <strong class="text-center">TO</strong>
+                        <strong class="text-center">{{retailerQues.to}}</strong>
                     </div>
                 <!-- </md-content> -->
                 <!-- Margin Slider -->
@@ -41,7 +41,7 @@
                         <!-- <form name="userForm"> -->
                         <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block" flex-gt-md="">
                             <span class="space-15"></span>
-                            <p class="text-red">Min</p>
+                            <p class="text-red">{{retailerQues.min}}</p>
                             <span class="space-15"></span>
                             <input type="tel" ng-model="profit.min" placeholder="10" class="col-xs-4 col-sm-4 col-md-4">
                         </md-input-container>
@@ -50,13 +50,13 @@
                     <div class="p-0 col-xs-4 col-sm-4 col-md-4">
                         <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block" flex-gt-md="">
                             <span class="space-15"></span>
-                            <p class="text-red">Max</p>
+                            <p class="text-red">{{retailerQues.max}}</p>
                             <span class="space-15"></span>
                             <input type="tel" ng-model="profit.max" placeholder="1500" class="col-xs-4 col-sm-4 col-md-4">
                         </md-input-container>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center margin-top-50">
-                        <strong class="text-center">TO</strong>
+                        <strong class="text-center">{{retailerQues.to}}</strong>
                     </div>
                 </md-content>
                 <!-- Profit Slider -->
@@ -79,7 +79,8 @@
     <section>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 placed-bottom-0 p-0 m-0">
-                <div submit-button-rect ng-click="submitButton()" aria-label="Submit" type="Submit"></div>
+                <div submit-button-rect ng-click="submitButton()" aria-label="{{button.submit}}" 
+                     type="{{button.submit}}"></div>
             </div>
         </div>
     </section>

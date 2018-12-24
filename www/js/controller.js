@@ -51,6 +51,7 @@ myCorteva.controller('registrationCtrl', ['$rootScope', '$scope', '$location', f
 myCorteva.controller('otpCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside otpCtrl");
     $scope.otp = otp;
+    $scope.button = button;
 
     /* OTP JS */
     function getCodeBoxElement(index) {
@@ -93,6 +94,7 @@ myCorteva.controller('prqCropTypeCtrl', ['$rootScope', '$scope', '$location', fu
     console.log("Inside prqCropTypeCtrl");
     $scope.postReg = postReg;
     $scope.cropTypeOptions = cropTypeOptions;
+    $scope.button = button;
 
     /* Navigation on Next */
     $scope.goToIsCropInfected = function () {
@@ -104,7 +106,9 @@ myCorteva.controller('prqCropTypeCtrl', ['$rootScope', '$scope', '$location', fu
 /* Post Registration Questionnaire: IsCropInfected Controller*/
 myCorteva.controller('prqCropInfectedCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside prqCropInfectedCtrl");
+    $scope.postReg = postReg;
     $scope.isCropInfected = postReg.isCropInfected;
+    $scope.button = button;
 
     /* Navigation on Next */
     $scope.goToAcreage = function () {
@@ -119,6 +123,7 @@ myCorteva.controller('prqAcreageCtrl', ['$rootScope', '$scope', '$location', fun
 
     $scope.acreageLabel = postReg.acreage;
     $scope.acreage = acreage;
+    $scope.button = button;
 
     /* Navigation on Next */
     $scope.goToSelectImage = function () {
@@ -130,6 +135,7 @@ myCorteva.controller('prqAcreageCtrl', ['$rootScope', '$scope', '$location', fun
 /* Post Registration Questionnaire: Select Image Controller*/
 myCorteva.controller('prqSelectImageCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside prqSelectImageCtrl");
+    $scope.button = button;
     $scope.selectImageLabel = postReg.selectImage;
     $scope.imageSuccess = postReg.imageSuccess;
     /* Function on Select Button */
@@ -147,6 +153,7 @@ myCorteva.controller('prqSelectImageCtrl', ['$rootScope', '$scope', '$location',
 /* Post Registration Questionnaire: Select Seeding Date Controller*/
 myCorteva.controller('prqSelectDateCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside prqSelectDateCtrl");
+    $scope.button = button;
     $scope.selectDateLabel = postReg.selectDate;
     /* Navigation on Skip & Continue */
     $scope.submit = function () {
@@ -160,6 +167,7 @@ myCorteva.controller('prqSelectDateCtrl', ['$rootScope', '$scope', '$location', 
 /* Retailer Questionnaire: Retailer Connect Controller*/
 myCorteva.controller('retailerConnectCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside retailerConnectCtrl");
+    $scope.button = button;
     $scope.retailerQues = retailerQues;
     $scope.weeks = weeks;
     /* Navigation on Next */
@@ -171,6 +179,7 @@ myCorteva.controller('retailerConnectCtrl', ['$rootScope', '$scope', '$location'
 /* Retailer Questionnaire: Retailer Estimate Controller*/
 myCorteva.controller('retailerEstimateCtrl', ['$rootScope', '$scope', '$location', function ($rootScope, $scope, $location) {
     console.log("Inside retailerEstimateCtrl");
+    $scope.button = button;
     $scope.retailerQues = retailerQues;
     $scope.liquidationRange = liquidationRange;
 

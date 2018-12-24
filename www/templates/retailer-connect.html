@@ -18,7 +18,7 @@
                             <span class="space-30"></span>
                             <p>{{retailerQues.dealerName}}</p>
                             <span class="space-10"></span>
-                            <input ng-model="dealer.name" placeholder="Padmanab" class="col-xs-12 col-sm-12 col-md-12">
+                            <input ng-model="dealer.name" placeholder="{{retailerQues.dealerNamePlaceholder}}" class="col-xs-12 col-sm-12 col-md-12">
                         </md-input-container>
                         <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block" flex-gt-md="">
                             <span class="space-30"></span>
@@ -50,7 +50,8 @@
     <section>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 placed-bottom-0 p-0 m-0">
-                <div primary-button-rect ng-click="goToRetailerEstimate()" aria-label="Next" type="Next"></div>
+                <div primary-button-rect ng-click="goToRetailerEstimate()" aria-label="{{button.next}}" 
+                     type="{{button.next}}"></div>
             </div>
         </div>
     </section>

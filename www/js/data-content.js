@@ -1,10 +1,24 @@
+button = {
+    continue: "Continue",
+    next: "Next",
+    submit: "Submit",
+    select: "Select",
+    skipncontinue: "Skip & Continue"
+}
+
 /* Registration Data */
 registration = {
     profilePicLabel: "Take a Selfie for profile picture",
     nameLabel: "What name should we call you?",
+    fname: "First Name",
+    lname: "Last Name",
     phoneLabel: "We will use your mobile number to authenticate you",
+    mobilenumber: "Mobile Number",
+    email: "Email",
     profession: "Profession",
-    emailIdLabel: "Your email ID is optional."
+    emailIdLabel: "Your email ID is optional.",
+    generateOTP: "Generate OTP",
+    signup: "Signup"
 }
 professionType = {
     type1: 'Grower',
@@ -23,6 +37,8 @@ postReg = {
     helpUnderstand: "Please help us understand your crop issue better by answering few simple questions.",
     qCropType: "May we know which crop you sowed?",
     isCropInfected: "Is your Crop infected by BPH?",
+    yes: "Yes",
+    no: "No",
     acreage: "Acreage",
     selectImage: "Select an image of your Crop (Optional)",
     imageSuccess: "Added image succesfully",
@@ -33,9 +49,13 @@ retailerQues = {
     heading1: "Thank you for watching the video",
     heading2: "Kindly help us understand you better with the following questions.",
     dealerName: "Dealer Name",
+    dealerNamePlaceholder: "Padmanab",
     numberOfFarmer: "Approximate Number of Farmers in Catchment Area",
     seedingWeeks: "Seeding weeks in your area",
     margin: "Margin",
+    min: "Min",
+    to: "TO",
+    max: "Max",
     profitPercent: "Profit Percentage",
     liquidation: "Approx. Liquidation from Store"
 }

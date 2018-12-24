@@ -9,7 +9,8 @@
                 <span class="space-30"></span>
                 <strong>{{selectImageLabel}}</strong>
                 <span class="space-30"></span>
-                <div primary-button ng-click="selectImage()" aria-label="Select" type="Select"></div>
+                <div primary-button ng-click="selectImage()" aria-label="{{button.select}}" 
+                     type="{{button.select}}"></div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <span class="space-30"></span>
@@ -24,9 +25,11 @@
     <section>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 placed-bottom-0 p-0 m-0">
-                <div ng-if="!imageAdded" primary-button-rect ng-click="goToSeedingDate()" aria-label="Skip & Continue" type="Skip & Continue"></div>
+                <div ng-if="!imageAdded" primary-button-rect ng-click="goToSeedingDate()" 
+                     aria-label="{{button.skipncontinue}}" type="{{button.skipncontinue}}"></div>
                 <!-- If Image Selected, Change the Button label to 'Next' -->
-                <div ng-if="imageAdded" primary-button-rect ng-click="goToSeedingDate()" aria-label="Next" type="Next"></div>
+                <div ng-if="imageAdded" primary-button-rect ng-click="goToSeedingDate()" 
+                     aria-label="{{button.next}}" type="{{button.next}}"></div>
             </div>
         </div>
     </section>

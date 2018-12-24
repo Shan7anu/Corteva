@@ -26,17 +26,17 @@
                             <span class="space-30"></span>
                             <p class="blue">{{registration.nameLabel}}</p>
                             <span class="space-15"></span>
-                            <input ng-model="user.fname" placeholder="First Name" class="col-xs-12 col-sm-12 col-md-12">
+                            <input ng-model="user.fname" placeholder="{{registration.fname}}" class="col-xs-12 col-sm-12 col-md-12">
                         </md-input-container>
                         <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block" flex-gt-md="">
                             <span class="space-5"></span>
-                            <input ng-model="user.lname" placeholder="Last Name" class="col-xs-12 col-sm-12 col-md-12">
+                            <input ng-model="user.lname" placeholder="{{registration.lname}}" class="col-xs-12 col-sm-12 col-md-12">
                         </md-input-container>
                         <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block" flex-gt-md="">
                             <span class="space-15"></span>
                             <p class="blue">{{registration.phoneLabel}}</p>
                             <span class="space-15"></span>
-                            <input type="tel" ng-model="user.phone" placeholder="Mobile Number" class="col-xs-12 col-sm-12 col-md-12">
+                            <input type="tel" ng-model="user.phone" placeholder="{{registration.mobilenumber}}" class="col-xs-12 col-sm-12 col-md-12">
                         </md-input-container>
                         <md-input-container class="p-0 m-0 full-width" md-no-float="" class="md-block" flex-gt-md="">
                             <span class="space-15"></span>
@@ -55,12 +55,14 @@
                             <span class="space-15"></span>
                             <p class="blue">{{registration.emailIdLabel}}</p>
                             <span class="space-15"></span>
-                            <input type="email" ng-model="user.email" placeholder="Email" class="col-xs-12 col-sm-12 col-md-12">
+                            <input type="email" ng-model="user.email" placeholder="{{registration.email}}" class="col-xs-12 col-sm-12 col-md-12">
                         </md-input-container>
                         <span class="space-30"></span>
-                        <div primary-button ng-click="sendOTP()" aria-label="Generate OTP" type="Generate OTP"></div>
+                        <div primary-button ng-click="sendOTP()" aria-label="{{registration.generateOTP}}" 
+                            type="{{registration.generateOTP}}"></div>
                         <span class="space-10 col-xs-12 col-sm-12 col-md-12"></span>
-                        <div secondary-button ng-click="signup()" aria-label="Signup" type="Signup"></div>
+                        <div secondary-button ng-click="signup()" aria-label="{{registration.signup}}" 
+                            type="{{registration.signup}}"></div>
                     </md-content>
                         <span class="space-30 col-xs-12 col-sm-12 col-md-12"></span>
                         <!-- </form> -->
